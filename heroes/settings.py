@@ -30,7 +30,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-CORS_ORIGIN_WHITELIST = ('localhost:4200',)
+CORS_ORIGIN_WHITELIST = ('localhost:4200', 'heroes.com')
 # CORS_ORIGIN_ALLOW_ALL = True
 
 INSTALLED_APPS = [
