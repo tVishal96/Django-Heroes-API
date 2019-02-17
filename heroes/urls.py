@@ -17,5 +17,5 @@ from django.urls import include, path
 from rest_framework.routers import DefaultRouter
 
 urlpatterns = [
-    path('', include('api.urls')),
+    path('api/', include('api.urls')),
 ]
