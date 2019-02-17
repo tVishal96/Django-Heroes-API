@@ -1,0 +1,394 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Feb 18 03:21:04 2019] ***
+compiled with version: 7.3.0 on 15 February 2019 19:23:21
+os: Linux-4.15.0-45-generic #48-Ubuntu SMP Tue Jan 29 16:28:13 UTC 2019
+nodename: vishal-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/vishal/Programs/Python/Django/Django-Heroes-API
+writing pidfile to project-master.pid
+detected binary path: /home/vishal/.virtualenvs/Django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 15543
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8001 fd 3
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x558ad8d8d430
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x558ad8d8d430 pid: 1985 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1985)
+spawned uWSGI worker 1 (pid: 1987, cores: 1)
+spawned uWSGI worker 2 (pid: 1988, cores: 1)
+spawned uWSGI worker 3 (pid: 1989, cores: 1)
+spawned uWSGI worker 4 (pid: 1990, cores: 1)
+spawned uWSGI worker 5 (pid: 1991, cores: 1)
+Invalid HTTP_HOST header: 'heroes.com'. You may need to add 'heroes.com' to ALLOWED_HOSTS.
+Bad Request: /api
+[pid: 1987|app: 0|req: 1/1] 127.0.0.1 () {40 vars in 624 bytes} [Sun Feb 17 22:03:13 2019] GET /api => generated 55473 bytes in 94 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'heroes.com'. You may need to add 'heroes.com' to ALLOWED_HOSTS.
+Bad Request: /api/heroes/
+[pid: 1991|app: 0|req: 1/2] 127.0.0.1 () {42 vars in 657 bytes} [Sun Feb 17 22:03:22 2019] GET /api/heroes/ => generated 55690 bytes in 86 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'heroes.com'. You may need to add 'heroes.com' to ALLOWED_HOSTS.
+Bad Request: /api/heroes/
+[pid: 1987|app: 0|req: 2/3] 127.0.0.1 () {42 vars in 657 bytes} [Sun Feb 17 22:03:28 2019] GET /api/heroes/ => generated 55690 bytes in 69 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'heroes.com'. You may need to add 'heroes.com' to ALLOWED_HOSTS.
+Bad Request: /api/heroes/
+[pid: 1991|app: 0|req: 2/4] 127.0.0.1 () {42 vars in 660 bytes} [Sun Feb 17 22:03:32 2019] GET /api/heroes/ => generated 55693 bytes in 86 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'heroes.com'. You may need to add 'heroes.com' to ALLOWED_HOSTS.
+Bad Request: /api/heroes/
+[pid: 1987|app: 0|req: 3/5] 127.0.0.1 () {42 vars in 657 bytes} [Sun Feb 17 22:03:33 2019] GET /api/heroes/ => generated 55690 bytes in 65 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'heroes.com'. You may need to add 'heroes.com' to ALLOWED_HOSTS.
+Bad Request: /api/heroes/
+[pid: 1987|app: 0|req: 4/6] 127.0.0.1 () {42 vars in 657 bytes} [Sun Feb 17 22:05:26 2019] GET /api/heroes/ => generated 55690 bytes in 137 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'heroes.com'. You may need to add 'heroes.com' to ALLOWED_HOSTS.
+Bad Request: /api/heroes/
+[pid: 1991|app: 0|req: 3/7] 127.0.0.1 () {42 vars in 660 bytes} [Sun Feb 17 22:05:28 2019] GET /api/heroes/ => generated 55693 bytes in 93 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'heroes.com'. You may need to add 'heroes.com' to ALLOWED_HOSTS.
+Bad Request: /api/heroes/
+[pid: 1987|app: 0|req: 5/8] 127.0.0.1 () {42 vars in 657 bytes} [Sun Feb 17 22:05:29 2019] GET /api/heroes/ => generated 55690 bytes in 121 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'heroes.com'. You may need to add 'heroes.com' to ALLOWED_HOSTS.
+Bad Request: /api/heroes/
+[pid: 1991|app: 0|req: 4/9] 127.0.0.1 () {42 vars in 660 bytes} [Sun Feb 17 22:05:30 2019] GET /api/heroes/ => generated 55693 bytes in 164 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+...brutally killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/vishal/Programs/Python/Django/Django-Heroes-API
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (:8001)
+running /home/vishal/.virtualenvs/Django/bin/uwsgi
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Feb 17 22:07:04 2019] ***
+compiled with version: 7.3.0 on 15 February 2019 19:23:21
+os: Linux-4.15.0-45-generic #48-Ubuntu SMP Tue Jan 29 16:28:13 UTC 2019
+nodename: vishal-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/vishal/Programs/Python/Django/Django-Heroes-API
+detected binary path: /home/vishal/.virtualenvs/Django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 15543
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address :8001 fd 3
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x558dfc465180
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x558dfc465180 pid: 1985 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1985)
+spawned uWSGI worker 1 (pid: 4533, cores: 1)
+spawned uWSGI worker 2 (pid: 4534, cores: 1)
+spawned uWSGI worker 3 (pid: 4535, cores: 1)
+spawned uWSGI worker 4 (pid: 4536, cores: 1)
+spawned uWSGI worker 5 (pid: 4537, cores: 1)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Feb 18 03:40:43 2019] ***
+compiled with version: 7.3.0 on 15 February 2019 19:23:21
+os: Linux-4.15.0-45-generic #48-Ubuntu SMP Tue Jan 29 16:28:13 UTC 2019
+nodename: vishal-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/vishal/Programs/Python/Django/Django-Heroes-API
+writing pidfile to project-master.pid
+detected binary path: /home/vishal/.virtualenvs/Django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 15543
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (:8001).
+bind(): Address already in use [core/socket.c line 769]
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+Invalid HTTP_HOST header: 'heroes.com'. You may need to add 'heroes.com' to ALLOWED_HOSTS.
+Bad Request: /api/heroes/
+[pid: 4533|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 657 bytes} [Sun Feb 17 22:11:45 2019] GET /api/heroes/ => generated 55690 bytes in 89 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'heroes.com'. You may need to add 'heroes.com' to ALLOWED_HOSTS.
+Bad Request: /api
+[pid: 4537|app: 0|req: 1/2] 127.0.0.1 () {40 vars in 624 bytes} [Sun Feb 17 22:12:03 2019] GET /api => generated 55473 bytes in 98 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Feb 18 03:54:48 2019] ***
+compiled with version: 7.3.0 on 15 February 2019 19:23:21
+os: Linux-4.15.0-45-generic #48-Ubuntu SMP Tue Jan 29 16:28:13 UTC 2019
+nodename: vishal-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/vishal/Programs/Python/Django/Django-Heroes-API
+writing pidfile to project-master.pid
+detected binary path: /home/vishal/.virtualenvs/Django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 15543
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8001 fd 3
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5630bf89e420
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5630bf89e420 pid: 1906 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1906)
+spawned uWSGI worker 1 (pid: 1908, cores: 1)
+spawned uWSGI worker 2 (pid: 1909, cores: 1)
+spawned uWSGI worker 3 (pid: 1910, cores: 1)
+spawned uWSGI worker 4 (pid: 1911, cores: 1)
+spawned uWSGI worker 5 (pid: 1912, cores: 1)
+[pid: 1908|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 657 bytes} [Sun Feb 17 22:24:58 2019] GET /api/heroes/ => generated 258 bytes in 561 msecs (HTTP/1.1 200) 5 headers in 164 bytes (1 switches on core 0)
+[pid: 1912|app: 0|req: 1/2] 127.0.0.1 () {42 vars in 660 bytes} [Sun Feb 17 22:24:59 2019] GET /api/heroes/ => generated 258 bytes in 538 msecs (HTTP/1.1 200) 5 headers in 164 bytes (1 switches on core 0)
+[pid: 1911|app: 0|req: 1/3] 127.0.0.1 () {42 vars in 663 bytes} [Sun Feb 17 22:25:23 2019] GET /api/heroes/2/ => generated 21 bytes in 348 msecs (HTTP/1.1 200) 5 headers in 177 bytes (1 switches on core 0)
+[pid: 1912|app: 0|req: 2/4] 127.0.0.1 () {42 vars in 660 bytes} [Sun Feb 17 22:25:30 2019] GET /api/heroes/ => generated 258 bytes in 13 msecs (HTTP/1.1 200) 5 headers in 164 bytes (1 switches on core 0)
+[pid: 1911|app: 0|req: 2/5] 127.0.0.1 () {42 vars in 657 bytes} [Sun Feb 17 22:25:32 2019] GET /api/heroes/ => generated 258 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 164 bytes (1 switches on core 0)
+[pid: 1910|app: 0|req: 1/6] 127.0.0.1 () {42 vars in 663 bytes} [Sun Feb 17 22:25:35 2019] GET /api/heroes/9/ => generated 23 bytes in 573 msecs (HTTP/1.1 200) 5 headers in 177 bytes (1 switches on core 0)
+Internal Server Error: /api/heroes/9/
+Traceback (most recent call last):
+  File "/home/vishal/.virtualenvs/Django/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/vishal/.virtualenvs/Django/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: attempt to write a readonly database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/vishal/.virtualenvs/Django/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/vishal/.virtualenvs/Django/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/vishal/.virtualenvs/Django/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vishal/.virtualenvs/Django/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vishal/.virtualenvs/Django/lib/python3.6/site-packages/rest_framework/viewsets.py", line 116, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vishal/.virtualenvs/Django/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vishal/.virtualenvs/Django/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vishal/.virtualenvs/Django/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vishal/.virtualenvs/Django/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/vishal/.virtualenvs/Django/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/vishal/.virtualenvs/Django/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/vishal/.virtualenvs/Django/lib/python3.6/site-packages/rest_framework/serializers.py", line 986, in update
+    instance.save()
+  File "/home/vishal/.virtualenvs/Django/lib/python3.6/site-packages/django/db/models/base.py", line 718, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/vishal/.virtualenvs/Django/lib/python3.6/site-packages/django/db/models/base.py", line 748, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/vishal/.virtualenvs/Django/lib/python3.6/site-packages/django/db/models/base.py", line 812, in _save_table
+    forced_update)
+  File "/home/vishal/.virtualenvs/Django/lib/python3.6/site-packages/django/db/models/base.py", line 861, in _do_update
+    return filtered._update(values) > 0
+  File "/home/vishal/.virtualenvs/Django/lib/python3.6/site-packages/django/db/models/query.py", line 712, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/vishal/.virtualenvs/Django/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1383, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/home/vishal/.virtualenvs/Django/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1065, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/vishal/.virtualenvs/Django/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/vishal/.virtualenvs/Django/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/vishal/.virtualenvs/Django/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/vishal/.virtualenvs/Django/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/vishal/.virtualenvs/Django/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/vishal/.virtualenvs/Django/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/vishal/.virtualenvs/Django/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: attempt to write a readonly database
+[pid: 1912|app: 0|req: 3/7] 127.0.0.1 () {44 vars in 690 bytes} [Sun Feb 17 22:25:41 2019] PUT /api/heroes/9/ => generated 16153 bytes in 156 msecs (HTTP/1.1 500) 4 headers in 153 bytes (1 switches on core 0)
+[pid: 1911|app: 0|req: 3/8] 127.0.0.1 () {42 vars in 657 bytes} [Sun Feb 17 22:25:42 2019] GET /api/heroes/ => generated 258 bytes in 19 msecs (HTTP/1.1 200) 5 headers in 164 bytes (1 switches on core 0)
+[pid: 1912|app: 0|req: 4/9] 127.0.0.1 () {42 vars in 663 bytes} [Sun Feb 17 22:25:46 2019] GET /api/heroes/9/ => generated 23 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 177 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Feb 18 03:56:27 2019] ***
+compiled with version: 7.3.0 on 15 February 2019 19:23:21
+os: Linux-4.15.0-45-generic #48-Ubuntu SMP Tue Jan 29 16:28:13 UTC 2019
+nodename: vishal-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/vishal/Programs/Python/Django/Django-Heroes-API
+writing pidfile to project-master.pid
+detected binary path: /home/vishal/.virtualenvs/Django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 15543
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8001 fd 3
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5595f9fe9420
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5595f9fe9420 pid: 1935 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1935)
+spawned uWSGI worker 1 (pid: 1937, cores: 1)
+spawned uWSGI worker 2 (pid: 1938, cores: 1)
+spawned uWSGI worker 3 (pid: 1939, cores: 1)
+spawned uWSGI worker 4 (pid: 1940, cores: 1)
+spawned uWSGI worker 5 (pid: 1941, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Feb 18 04:10:33 2019] ***
+compiled with version: 7.3.0 on 15 February 2019 19:23:21
+os: Linux-4.15.0-45-generic #48-Ubuntu SMP Tue Jan 29 16:28:13 UTC 2019
+nodename: vishal-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/vishal/Programs/Python/Django/Django-Heroes-API
+writing pidfile to project-master.pid
+detected binary path: /home/vishal/.virtualenvs/Django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 15543
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8001 fd 3
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x563e9f51e560
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x563e9f51e560 pid: 1932 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1932)
+spawned uWSGI worker 1 (pid: 1934, cores: 1)
+spawned uWSGI worker 2 (pid: 1935, cores: 1)
+spawned uWSGI worker 3 (pid: 1936, cores: 1)
+spawned uWSGI worker 4 (pid: 1937, cores: 1)
+spawned uWSGI worker 5 (pid: 1938, cores: 1)
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Feb 18 04:11:49 2019] ***
+compiled with version: 7.3.0 on 15 February 2019 19:23:21
+os: Linux-4.15.0-45-generic #48-Ubuntu SMP Tue Jan 29 16:28:13 UTC 2019
+nodename: vishal-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/vishal/Programs/Python/Django/Django-Heroes-API
+writing pidfile to project-master.pid
+detected binary path: /home/vishal/.virtualenvs/Django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 15543
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (:8001).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Feb 18 04:12:32 2019] ***
+compiled with version: 7.3.0 on 15 February 2019 19:23:21
+os: Linux-4.15.0-45-generic #48-Ubuntu SMP Tue Jan 29 16:28:13 UTC 2019
+nodename: vishal-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/vishal/Programs/Python/Django/Django-Heroes-API
+writing pidfile to project-master.pid
+detected binary path: /home/vishal/.virtualenvs/Django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 15543
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (:8001).
+bind(): Address already in use [core/socket.c line 769]

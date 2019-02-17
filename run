@@ -1,0 +1,7 @@
+uwsgi --socket :8001 \
+      --module heroes.wsgi \
+      --master \
+      --pidfile project-master.pid \
+      --processes 5 \
+      --max-requests 5000 \
+      --daemonize server.log
